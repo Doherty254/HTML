@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <form action="https://eldohub.co.ke/login" method="POST" enctype="multipart/form-data">
+        <!-- 
+        - action: the url for the server that the form data is submitted to.
+        - method: the http method to be used when sending the data to the server.
+        -enctype: 
+        -->
+        <label for="username">Fill your username</label>
+        <input type="text" name="username" id="username"> <br>
+
+        <label for="email">Your email</label>
+        <input type="email" name="email" id="email"> <br>
+
+        <label for="coverletter">Attach Cover Letter</label>
+        <input type="file" name="coverletter" id="coverletter"> <br>
+        <input type="password" name="password" id="password" placeholder="password"> <br>
+
+        <label for="">Gender</label>
+
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="fmale">Female</label>
+
+        <br>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" max="100">
+
+        <!-- checkbox, select(option), textarea, input:number -->
+        <br>
+        <input type="submit" value="Send">
+
+
+        <!--
+        form elements attributes
+        - type: support input validation - ensuring the user provide data in the correct format
+        - name: used for labelling data submitted to the server
+        - id: used to uniquely identify an element in a html page. assign labels in input element
+        - for: used in labels to assign a label to an input element(matching their values)
+        -->
+
+    </form>
+
+    <!-- http - hypertext transfer protocol
+    methods --- Get, POST, PUT, PATCH, DELETE
+    -->
+</body>
+</html>
